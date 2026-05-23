@@ -47,8 +47,8 @@ export default function Header() {
                     </ul>
                 </nav>
             </section>
-            <section className="bg-yellow-600 h-9 flex justify-center items-center">
-                <nav>
+            <section className="bg-background h-9 flex justify-center items-center">
+                <nav className="text-[#666666]">
                     <ul className="flex gap-14">
                         <li>
                             <button className="flex items-center gap-4">
