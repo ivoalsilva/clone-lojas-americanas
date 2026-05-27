@@ -17,22 +17,22 @@ export default function Footer() {
                     <li><a href="#">entregas e devoluções</a></li>
                 </ul>
             </nav>
-            <div className="flex justify-evenly relative">
+            <div className="flex justify-evenly relative bg-gray-200 p-4">
                 {/* logo americanas */}
                 <Link href="/">
                     <img src="/logos/logo-americanas.svg" alt="americanas - página inicial" />
                 </Link>
                 {/* (acordeão de categorias) */}
                 <details>
-                    <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex gap-2 items-center">
+                    <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex gap-2 items-center p-1 rounded-sm border border-transparent hover:border-gray-500 font-bold">
                         <span>Categorias</span>
                         <ChevronDown aria-hidden="true" />
                     </summary>
 
                     {/* aqui vai o conteúdo que aparece quando aberto */}
                     <div className='flex absolute top-full left-0 right-0 mt-4 justify-evenly'>
-                        <div>
-                            <h3>Institucional</h3>
+                        <div className='flex flex-col gap-4'>
+                            <h3 className='font-bold'>Institucional</h3>
                             <ul className='flex flex-col gap-4'>
                                 <li><a href="">investidores americanas sa</a></li>
                                 <li><a href="">governança corporativa</a></li>
@@ -46,9 +46,9 @@ export default function Footer() {
                                 <li><a href="">programa de afiliados</a></li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>Dúvidas</h3>
-                            <ul>
+                        <div className='flex flex-col gap-4'>
+                            <h3  className='font-bold'>Dúvidas</h3>
+                            <ul className='flex flex-col gap-4'>
                                 <li><a href="">central de atendimento</a></li>
                                 <li><a href="">entregas e devoluções</a></li>
                                 <li><a href="">mapa do site</a></li>
@@ -64,9 +64,9 @@ export default function Footer() {
                                 <li><a href="">regras para compras internacionais</a></li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>Serviços</h3>
-                            <ul>
+                        <div className='flex flex-col gap-4'>
+                            <h3  className='font-bold'>Serviços</h3>
+                            <ul className='flex flex-col gap-4'>
                                 <li><a href="">cliente a</a></li>
                                 <li><a href="">tipos de entrega</a></li>
                                 <li><a href="">seguro robo e furto</a></li>
@@ -77,8 +77,8 @@ export default function Footer() {
                                 <li><a href="">confira todos</a></li>
                             </ul>
                         </div>
-                        <div>
-                            <h3>AME Digital</h3>
+                        <div className='flex flex-col gap-4'>
+                            <h3  className='font-bold'>AME Digital</h3>
                             <ul>
                                 <li><a href="">comunicado</a></li>
                             </ul>
