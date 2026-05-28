@@ -9,15 +9,15 @@ export default function Footer() {
         // No React: componente precisa devolver algo renderizável
         <footer>
             {/* ARIA = Accessible Rich Internet Applications. É um conjunto de atributos que dá informação extra pra tecnologias assistivas: aria-label especificamente faz uma coisa só: define um nome acessível pro elemento. Esse nome não aparece na tela — ele é só "lido" pelo leitor de tela quando o usuário navega até aquele elemento. */}
-            <nav aria-label="Atendimento" className="h-30  my-5 flex items-center justify-center">
-                <ul className="flex gap-20">
+            <nav aria-label="Atendimento" className="my-5 px-4">
+                <ul className="flex flex-wrap justify-center gap-4 md:gap-20">
                     <li><a href="#">sac 408545785</a></li>
                     <li><a href="#">guia de segurança</a></li>
                     <li><a href="#">mercado</a></li>
                     <li><a href="#">entregas e devoluções</a></li>
                 </ul>
             </nav>
-            <div className="flex justify-evenly relative bg-gray-200 p-4">
+            <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-6 relative bg-gray-200 p-4">
                 {/* logo americanas */}
                 <Link href="/">
                     <img src="/logos/logo-americanas.svg" alt="americanas - página inicial" />
@@ -30,7 +30,7 @@ export default function Footer() {
                     </summary>
 
                     {/* aqui vai o conteúdo que aparece quando aberto */}
-                    <div className='flex absolute top-full left-0 right-0 mt-4 justify-evenly'>
+                    <div className='absolute top-full left-0 right-0 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-gray-200 p-4 z-10'>
                         <div className='flex flex-col gap-4'>
                             <h3 className='font-bold'>Institucional</h3>
                             <ul className='flex flex-col gap-4'>
@@ -92,16 +92,16 @@ export default function Footer() {
                     aria-label no <a>	leitor de tela	dar nome ao link aria-hidden no ícone leitor de tela	esconder o ornamento visual.
                     
                     rel="noopener noreferrer" segurança e privacidade e decidi cobrir os dois */}
-                    <a href="#" aria-label='Instagram' target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/americanas" aria-label='Instagram' target="_blank" rel="noopener noreferrer">
                         <SiInstagram aria-hidden="true" />
                     </a>
-                    <a href="#" aria-label='Youtube' target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/CanalAmericanas" aria-label='Youtube' target="_blank" rel="noopener noreferrer">
                         <SiYoutube aria-hidden="true" />
                     </a>
-                    <a href="#" aria-label='Facebook' target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/americanas" aria-label='Facebook' target="_blank" rel="noopener noreferrer">
                         <SiFacebook aria-hidden="true" />
                     </a>
-                    <a href="#" aria-label='Tiktok' target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@americanas" aria-label='Tiktok' target="_blank" rel="noopener noreferrer">
                         <SiTiktok aria-hidden="true" />
                     </a>
                 </nav>
