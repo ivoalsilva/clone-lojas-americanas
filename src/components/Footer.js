@@ -1,16 +1,18 @@
+
+
 import Link from 'next/link'
 import { SiFacebook, SiInstagram, SiTiktok, SiYoutube } from '@icons-pack/react-simple-icons'
 import { ChevronDown } from 'lucide-react'
-
 export default function Footer() {
     return (
+
         // return() vazio gera erro porque o react espera algum valor
         // return null nao gera erro porque NULL é um valor válido no rect.
         // No React: componente precisa devolver algo renderizável
         <footer>
             {/* ARIA = Accessible Rich Internet Applications. É um conjunto de atributos que dá informação extra pra tecnologias assistivas: aria-label especificamente faz uma coisa só: define um nome acessível pro elemento. Esse nome não aparece na tela — ele é só "lido" pelo leitor de tela quando o usuário navega até aquele elemento. */}
             <nav aria-label="Atendimento" className="my-5 px-4">
-                <ul className="flex flex-wrap justify-center gap-4 md:gap-20">
+                <ul className="flex flex-wrap justify-center gap-4 md:gap-20 text-[#666666]">
                     <li><a href="#">sac 408545785</a></li>
                     <li><a href="#">guia de segurança</a></li>
                     <li><a href="#">mercado</a></li>
@@ -24,16 +26,16 @@ export default function Footer() {
                 </Link>
                 {/* (acordeão de categorias) */}
                 <details>
-                    <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex gap-2 items-center p-1 rounded-sm border border-transparent hover:border-gray-500 font-bold">
-                        <span>Categorias</span>
+                    <summary className="list-none [&::-webkit-details-marker]:hidden cursor-pointer flex gap-2 items-center p-1 rounded-sm border border-transparent hover:border-gray-500 font-bold text-[#666666]">
+                        <span>mais informações</span>
                         <ChevronDown aria-hidden="true" />
                     </summary>
 
                     {/* aqui vai o conteúdo que aparece quando aberto */}
                     <div className='absolute top-full left-0 right-0 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-gray-200 p-4 z-10'>
                         <div className='flex flex-col gap-4'>
-                            <h3 className='font-bold'>Institucional</h3>
-                            <ul className='flex flex-col gap-4'>
+                            <h3 className='font-bold text-gray-500'>Institucional</h3>
+                            <ul className='flex flex-col gap-4 text-[#666666]'>
                                 <li><a href="">investidores americanas sa</a></li>
                                 <li><a href="">governança corporativa</a></li>
                                 <li><a href="">lojas americanas</a></li>
@@ -47,8 +49,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <h3  className='font-bold'>Dúvidas</h3>
-                            <ul className='flex flex-col gap-4'>
+                            <h3 className='font-bold text-gray-500'>Dúvidas</h3>
+                            <ul className='flex flex-col gap-4 text-[#666666]'>
                                 <li><a href="">central de atendimento</a></li>
                                 <li><a href="">entregas e devoluções</a></li>
                                 <li><a href="">mapa do site</a></li>
@@ -65,8 +67,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <h3  className='font-bold'>Serviços</h3>
-                            <ul className='flex flex-col gap-4'>
+                            <h3 className='font-bold text-gray-500'>Serviços</h3>
+                            <ul className='flex flex-col gap-4 text-[#666666]'>
                                 <li><a href="">cliente a</a></li>
                                 <li><a href="">tipos de entrega</a></li>
                                 <li><a href="">seguro robo e furto</a></li>
@@ -78,8 +80,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <h3  className='font-bold'>AME Digital</h3>
-                            <ul>
+                            <h3 className='font-bold text-gray-500'>AME Digital</h3>
+                            <ul className=' text-[#666666]'>
                                 <li><a href="">comunicado</a></li>
                             </ul>
                         </div>
@@ -87,7 +89,7 @@ export default function Footer() {
                 </details>
 
                 {/* logo redes sociais */}
-                <nav className="flex gap-4" aria-label="Redes sociais">
+                <nav className="flex gap-4 text-[#666666]" aria-label="Redes sociais">
                     {/*
                     aria-label no <a>	leitor de tela	dar nome ao link aria-hidden no ícone leitor de tela	esconder o ornamento visual.
                     
