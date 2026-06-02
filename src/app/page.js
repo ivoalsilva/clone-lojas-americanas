@@ -1,5 +1,9 @@
+import Vitrine from "@/components/Vitrine";
+
 export default function Home () {
   return(
-    <div className="bg-gray-200 flex-1"></div>
+    <main className="flex-1">
+      <Vitrine />
+    </main>
   );
 }
