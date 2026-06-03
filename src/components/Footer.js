@@ -11,7 +11,7 @@ export default function Footer() {
         // No React: componente precisa devolver algo renderizável
         <footer>
             {/* ARIA = Accessible Rich Internet Applications. É um conjunto de atributos que dá informação extra pra tecnologias assistivas: aria-label especificamente faz uma coisa só: define um nome acessível pro elemento. Esse nome não aparece na tela — ele é só "lido" pelo leitor de tela quando o usuário navega até aquele elemento. */}
-            <nav aria-label="Atendimento" className="my-5 px-4">
+            <nav aria-label="Atendimento" className="my-5 p-2 bg-gray-200">
                 <ul className="flex flex-wrap justify-center gap-4 md:gap-20 text-[#666666]">
                     <li><a href="#">sac 408545785</a></li>
                     <li><a href="#">guia de segurança</a></li>

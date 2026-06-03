@@ -10,7 +10,7 @@ export default function Vitrine () {
     return (
         <section>
             <h2 className="text-[#666666] font-bold text-2xl p-4">tuuudo pra curtir o campeonato mundial</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 justify-center px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 justify-center px-4 text-[#666666] font-bold">
                 {categorias.map((categoria) =>(
                     <CategoriaCard key={categoria.slug} categoria={categoria}/>
                 ))}
