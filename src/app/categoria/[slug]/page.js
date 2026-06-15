@@ -11,9 +11,12 @@ export default async function CategoriaPage({ params }) {
   }
   return (
     <main>
-      <h1>{categoria.nome}</h1>
-      <img src={categoria.imagem} alt={categoria.nome} />
-      {produtosDaCategoria.map((produto) => (<ProdutoCard key={produto.id} produto={produto}/>))}
+      <div className="bg-red-600 text-white px-4 py-2 rounded-r-full w-fit">
+        <h1 className="text-2xl font-bold my-4">{categoria.nome}</h1>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {produtosDaCategoria.map((produto) => (<ProdutoCard key={produto.id} produto={produto} />))}
+      </div>
     </main>
   )
 };
