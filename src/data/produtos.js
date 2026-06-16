@@ -138,5 +138,75 @@ export const produtos = [
         preco: 13321.99 ,
         imagem: "/imgProdutos/celulares/iphone17proMax.webp",
         categoriaSlug: "celulares"
+    } ,
+    {
+        id: 21,
+        nome: "Cervejeira Esmaltec CV300R Frost Free com Sistema Fast Freezer 300L",
+        preco: 3815.00 ,
+        imagem: "/imgProdutos/cervejeira/cerve21.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 22,
+        nome: "Cervejeira Home Bar Electrolux Frost Free 100L Porta de Vidro Preta EB100 - 220v",
+        preco: 3499.00 ,
+        imagem: "/imgProdutos/cervejeira/cerve22.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 23,
+        nome: "Cervejeira Consul Titanium - CZD12MT",
+        preco: 2569.00 ,
+        imagem: "/imgProdutos/cervejeira/cerve23.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 24,
+        nome: "Cervejeira Philco PCV10A 100L",
+        preco: 3499.00 ,
+        imagem: "/imgProdutos/cervejeira/cerve24.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 25,
+        nome: "Cervejeira Fricon Frost Free 569 Litros VCFC569V Preto - 220V",
+        preco: 6443.33 ,
+        imagem: "/imgProdutos/cervejeira/cerve25.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 26,
+        nome: "Cervejeira Beer Maxx One Inverter 114L 1 Porta Digital VN12TPP Preto Onix 110V Metalfrio" ,
+        preco: 4068.40 ,
+        imagem: "/imgProdutos/cervejeira/cerve26.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 27,
+        nome: "CERVEJEIRA FISCHER INFINITY MULTI 92L PRETO",
+        preco: 2499.00 ,
+        imagem: "/imgProdutos/cervejeira/cerve27.png",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 28,
+        nome: "Cervejeira Electrolux 100 Litros Home Bar com Torre de Chopp EB10C Frost Free Porta de Vidro Preta - 110V",
+        preco: 2954.44 ,
+        imagem: "/imgProdutos/cervejeira/cerve28.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 29,
+        nome: "Cervejeira Expositor Vertical HQ Vidro Duplo 100 Litros Inox HQ-100CEVPV",
+        preco: 1887.78 ,
+        imagem: "/imgProdutos/cervejeira/cerve29.webp",
+        categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 30,
+        nome: "Cervejeira Consul 82 Litros Titanium CZD12ATANA - 127V",
+        preco: 2376.67 ,
+        imagem: "/imgProdutos/cervejeira/cerve30.webp",
+        categoriaSlug: "cervejeira"
     }
 ]
