@@ -10,9 +10,9 @@ export const categorias = [
         slug: "celulares"
     },
     {
-        nome: "Cervejaria",
-        imagem: "/imgCategorias/cervejaria.webp",
-        slug: "cervejaria"
+        nome: "Cervejeira",
+        imagem: "/imgCategorias/cervejeira.webp",
+        slug: "cervejeira"
     },
     {
         nome: "Doceria",
