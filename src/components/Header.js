@@ -1,14 +1,18 @@
-import { CircleUser, Store, Heart, ShoppingCart, Search, MapPin , Menu ,ChevronDown } from "lucide-react"
+import Link from "next/link";
+import { CircleUser, Store, Heart, ShoppingCart, Search, MapPin, Menu, ChevronDown } from "lucide-react"
 
 export default function Header() {
     return (
         <header>
             <section className="bg-red-600 w-full min-h-24 flex flex-wrap items-center gap-4 md:justify-evenly text-white p-4">
-                <div className="border-y-4 border-white">
-                    <h1 className="font-bold text-2xl">Clone das Americanas</h1>
-                </div>
+                <Link href="/">
+                    <div className="border-y-4 border-white">
+                        <h1 className="font-bold text-2xl">Clone das Americanas</h1>
+                    </div>
+                </Link>
+
                 <div className="flex items-center gap-4 ml-auto md:ml-0 md:order-2">
-                    <CircleUser size={40}/>
+                    <CircleUser size={40} />
                     <p className="hidden md:block font-bold">Olá, faça seu login <br /> ou cadastre-se</p>
                 </div>
                 <div className="flex gap-5 md:order-3">
@@ -47,9 +51,9 @@ export default function Header() {
                     <ul className="flex gap-14">
                         <li>
                             <button className="flex items-center gap-4">
-                                <Menu size={14}/>
+                                <Menu size={14} />
                                 <span>todos os departamentos</span>
-                                <ChevronDown size={14}/>
+                                <ChevronDown size={14} />
                             </button>
                         </li>
                         <li><a href="#">mercado</a></li>
@@ -63,7 +67,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <button className="lg:hidden" aria-label="Abrir menu">
-                    <Menu size={14}/>
+                    <Menu size={14} />
                 </button>
             </section>
         </header>
