@@ -1,3 +1,4 @@
+import Image from "next/image"
 import {ShoppingCart} from "lucide-react"
 
 export default function ProdutoCard({ produto }) {
@@ -5,7 +6,7 @@ export default function ProdutoCard({ produto }) {
     return (
         <div className="bg-white rounded-lg p-3 flex flex-col gap-2 shadow-sm">
             <div className="relative">
-                <img className="h-40 object-contain mx-auto" src={produto.imagem} alt={produto.nome}/>
+                <Image className="w-auto h-40 object-contain mx-auto" width={200} height={200} src={produto.imagem} alt={produto.nome}/>
                 <button aria-label="adicionar ao carrinho" className="absolute bottom-0 right-0 bg-red-600 text-white rounded-full p-2 ">
                     <ShoppingCart size={20}/>
                 </button>

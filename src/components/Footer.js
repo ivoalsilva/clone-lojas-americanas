@@ -1,7 +1,6 @@
-
-
+import Image from "next/image"
 import Link from 'next/link'
-import { SiFacebook, SiInstagram, SiTiktok, SiYoutube } from '@icons-pack/react-simple-icons'
+import { SiFacebook, SiInstagram, SiTiktok, SiYoutube} from '@icons-pack/react-simple-icons'
 import { ChevronDown } from 'lucide-react'
 export default function Footer() {
     return (
@@ -22,7 +21,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row md:justify-evenly items-center gap-6 relative bg-gray-200 p-4">
                 {/* logo americanas */}
                 <Link href="/">
-                    <img src="/logos/logo-americanas.svg" alt="americanas - página inicial" />
+                    <Image width={163} height={32} src="/logos/logo-americanas.svg" alt="americanas - página inicial" />
                 </Link>
                 {/* (acordeão de categorias) */}
                 <details>
