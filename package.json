@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint" ,
+    "test:e2e": "cypress run"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.11.1",
