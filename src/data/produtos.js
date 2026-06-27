@@ -208,5 +208,355 @@ export const produtos = [
         preco: 2376.67 ,
         imagem: "/imgProdutos/cervejeira/cerve30.webp",
         categoriaSlug: "cervejeira"
+    } ,
+    {
+        id: 31,
+        nome: "Caixa de Bombons Sonho de Valsa e Ouro Branco Sortidos 220g",
+        preco: 21.49 ,
+        imagem: "/imgProdutos/doceria/caixabombom.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 32,
+        nome: "Bis Xtra Chocolate Black 45g",
+        preco: 3.99 ,
+        imagem: "/imgProdutos/doceria/bis.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 33,
+        nome: "Barra de Chocolate ao Leite Garoto 80g",
+        preco: 8.99 ,
+        imagem: "/imgProdutos/doceria/barrachocolate.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 34,
+        nome: "Marshmallow Torção Baunilha Fini 80g Sem Glúten",
+        preco: 6.99 ,
+        imagem: "/imgProdutos/doceria/marshmallow.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 35,
+        nome: "Bala de Gelatina Tubes Morango Cítrico Fini 80g Pacote",
+        preco: 6.99 ,
+        imagem: "/imgProdutos/doceria/finipalito.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 36,
+        nome: "Bala de Gelatina Beijos Morango Fini 90g Sem Glúten",
+        preco: 6.99 ,
+        imagem: "/imgProdutos/doceria/fini.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 37,
+        nome: "Biscoito Recheado Morango Passatempo Nestlé 130g Crocante",
+        preco: 3.29 ,
+        imagem: "/imgProdutos/doceria/passatempo.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 38,
+        nome: "Biscoito Recheado Baunilha Oreo 90g Chocolate",
+        preco: 4.99 ,
+        imagem: "/imgProdutos/doceria/oreo.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 39,
+        nome: "Ferrero Rocher 12 Unidades 150g",
+        preco: 50.99 ,
+        imagem: "/imgProdutos/doceria/ferreiro.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 40,
+        nome: "Raffaello 15 Unidades 150g",
+        preco: 41.99 ,
+        imagem: "/imgProdutos/doceria/raffaello.webp",
+        categoriaSlug: "doceria"
+    } ,
+    {
+        id: 41,
+        nome: "Rack para TV até 75 Polegadas Madesa Brest 2 Portas 1 Gaveta Branco",
+        preco: 1119.99 ,
+        imagem: "/imgProdutos/rack-para-sala/1rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 42,
+        nome: "Rack Madesa Le Mans e Painel para TV até 55 Polegadas 2 Portas",
+        preco: 519.99 ,
+        imagem: "/imgProdutos/rack-para-sala/2rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 43,
+        nome: "Rack Madesa Le Mans e Painel para TV até 55 Polegadas 2 Portas",
+        preco: 390.99 ,
+        imagem: "/imgProdutos/rack-para-sala/3rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 44,
+        nome: "Rack Madesa Oslo e Painel para TV até 55 Polegadas 2 Portas",
+        preco: 569.99 ,
+        imagem: "/imgProdutos/rack-para-sala/4rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 45,
+        nome: "Rack Mobly Coventry I MDP e MDF Branco Acetinado 180 cm",
+        preco: 598.36 ,
+        imagem: "/imgProdutos/rack-para-sala/5rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 46,
+        nome: "Rack para TV até 65 Polegadas com Pés Turim Madesa",
+        preco: 237.99 ,
+        imagem: "/imgProdutos/rack-para-sala/6rack.jpeg",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 47,
+        nome: "Rack para Sala de Estar para TV até 40 Polegadas 2 Portas com 6 Pés Lavanda Viero",
+        preco: 355.53 ,
+        imagem: "/imgProdutos/rack-para-sala/7rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 48,
+        nome: "Rack Bancada para Sala Rivera 1.3 Off White Cinamomo – hb Móveis",
+        preco: 399.00 ,
+        imagem: "/imgProdutos/rack-para-sala/8rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 49,
+        nome: "Rack com Painel Ripado para TV até 85 Polegadas 1 Gaveta 2 Portas 230cm Nobre",
+        preco: 2820.50 ,
+        imagem: "/imgProdutos/rack-para-sala/9rack.webp",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 50,
+        nome: "Rack para TV até 70 Polegadas 160cm 4 Gavetas Rustic/Cinza Vik Madesa",
+        preco: 1529.99 ,
+        imagem: "/imgProdutos/rack-para-sala/10rack.jpeg",
+        categoriaSlug: "rack-para-sala"
+    } ,
+    {
+        id: 51,
+        nome: "Batata Frita Original Pringles 104g Lata Crocante",
+        preco: 9.99 ,
+        imagem: "/imgProdutos/salgadinhos/2salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 52,
+        nome: "Batata Frita Original Pringles 104g Lata Crocante",
+        preco: 14.99 ,
+        imagem: "/imgProdutos/salgadinhos/1salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 53,
+        nome: "Batata Frita Original Pringles 104g Lata Crocante",
+        preco: 3.99 ,
+        imagem: "/imgProdutos/salgadinhos/3salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 54,
+        nome: "Amendoim Japonês Tradicional Dori 90g Crocante",
+        preco: 2.99 ,
+        imagem: "/imgProdutos/salgadinhos/4salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 55,
+        nome: "Salgadinho de Milho Presunto Elma Chips 105g Assado",
+        preco: 9.99 ,
+        imagem: "/imgProdutos/salgadinhos/5salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 56,
+        nome: "Biscoito Salgado Original Club Social 144g Multipack Integral",
+        preco: 5.99 ,
+        imagem: "/imgProdutos/salgadinhos/6salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 57,
+        nome: "Batata Frita Lisa Clássica Lay's 70g Sem Glúten",
+        preco: 9.99 ,
+        imagem: "/imgProdutos/salgadinhos/7salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 58,
+        nome: "Batata Frita Lisa Peito de Peru Lay's Sensações 70g Premium",
+        preco: 9.99 ,
+        imagem: "/imgProdutos/salgadinhos/8salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 59,
+        nome: "Salgadinho Cebola Torcida 35g Pacote Crocante",
+        preco: 1.99 ,
+        imagem: "/imgProdutos/salgadinhos/9salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 60,
+        nome: "Salgadinho de Milho Pimenta e Limão Takis Fuego 56g Crocante",
+        preco: 4.99 ,
+        imagem: "/imgProdutos/salgadinhos/10salgado.webp",
+        categoriaSlug: "salgadinhos"
+    } ,
+    {
+        id: 61,
+        nome: `Smart TV Full HD AOC Roku TV 43" LED Wi-Fi Preto`,
+        preco: 1699.99 ,
+        imagem: "/imgProdutos/smarttv/1tv.webp",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 62,
+        nome: `Smart TV 4K 50" AIWA AWS-TV-50-BL-02-A Android HDR10 Bluetooth Borda Ultrafina`,
+        preco: 2399.00 ,
+        imagem: "/imgProdutos/smarttv/2tv.jpeg",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 63,
+        nome: `Smart TV 4K Samsung 55" Crystal UHD U8600F LED Wi-Fi Preto`,
+        preco: 3099.99 ,
+        imagem: "/imgProdutos/smarttv/3tv.webp",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 64,
+        nome: `Smart TV 32" Samsung HD 32H5000F Tizen 2 HDMI`,
+        preco: 2667.00 ,
+        imagem: "/imgProdutos/smarttv/3tv.webp",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 65,
+        nome: `Smart TV 50" LG 4K Ultra HD 50UA8550PSA webOS 25 AI Processor 4K Gen8 com Alexa 3 HDMI`,
+        preco: 4772.19 ,
+        imagem: "/imgProdutos/smarttv/4tv.webp",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 66,
+        nome: `Smart tv 32" philco hd dled p32crb roku tv 99323127 2026`,
+        preco: 1399.00 ,
+        imagem: "/imgProdutos/smarttv/6tv.webp",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 67,
+        nome: `Smart TV 86" LG 4K Ultra HD QNED 86QNED82ASG webOS 25 α7 AI Processor 4K Gen8 Alexa 3 HDMI`,
+        preco: 32787.12 ,
+        imagem: "/imgProdutos/smarttv/7tv.jpeg",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 68,
+        nome: `Smart TV 86" LG 4K Ultra HD QNED 86QNED82ASG webOS 25 α7 AI Processor 4K Gen8 Alexa 3 HDMI`,
+        preco: 32787.12 ,
+        imagem: "/imgProdutos/smarttv/8tv.jpeg",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 69,
+        nome: `Smart TV 55” 4K OLED Samsung QN55S90CA`,
+        preco: 12399.00 ,
+        imagem: "/imgProdutos/smarttv/9tv.jpeg",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 70,
+        nome: `Smart TV 75” 8K Neo QLED Samsung QN75QN900B`,
+        preco: 67099.00 ,
+        imagem: "/imgProdutos/smarttv/10tv.jpeg",
+        categoriaSlug: "smarttv"
+    } ,
+    {
+        id: 71,
+        nome: "Sofá Retrátil e Reclinável Mobly Pascal 3 Lugares Linho Cinza",
+        preco: 3579.99 ,
+        imagem: "/imgProdutos/sofa/1sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 72,
+        nome: "Sofá Retrátil e Reclinável Next Sofás Up 3 Lugares Madeira Maciça Velosuede Cinza",
+        preco: 1799.90 ,
+        imagem: "/imgProdutos/sofa/2sofa.jpeg",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 73,
+        nome: "Sofá Retrátil Mobly Solomons 2 Lugares Linho Cru",
+        preco: 3629.99 ,
+        imagem: "/imgProdutos/sofa/3sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 74,
+        nome: "Sofá Retrátil e Reclinável Mobly Malta Linho Prata 3 Lugares 200cm",
+        preco: 5279.99 ,
+        imagem: "/imgProdutos/sofa/4sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 75,
+        nome: "Sofá 4 Lugares Keva Volga Madeira Maciça Linho Bege 280 cm",
+        preco: 4469.88 ,
+        imagem: "/imgProdutos/sofa/5sofa.jpeg",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 76,
+        nome: "Sofá de Canto com Puff Flexforma Vegas Madeira Maciça Veludo Cinza Escuro",
+        preco: 2848.90 ,
+        imagem: "/imgProdutos/sofa/6sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 77,
+        nome: "Conjunto de Sofás 2 e 3 Lugares Linoforte Marselha Suede Marrom",
+        preco: 3865.90 ,
+        imagem: "/imgProdutos/sofa/7sofa.jpeg",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 78,
+        nome: "Recamier Luxo Madeira Maciça Londres",
+        preco: 1213.29 ,
+        imagem: "/imgProdutos/sofa/8sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 79,
+        nome: "Sofá com Chaise Esquerdo Mobly Live Linho Cotton Cru",
+        preco: 1213.29 ,
+        imagem: "/imgProdutos/sofa/9sofa.webp",
+        categoriaSlug: "sofa"
+    } ,
+    {
+        id: 80,
+        nome: "Sofá com Chaise Direito Mobly Bintan 3 Lugares Veludo Cinza Claro",
+        preco: 5697.99 ,
+        imagem: "/imgProdutos/sofa/10sofa.webp",
+        categoriaSlug: "sofa"
     }
 ]
