@@ -5,7 +5,7 @@ describe("Navegação", () => {
   });
   it("clicar em bebidas mostra os produtos da categoria" , () => {
     cy.visit("/");
-    cy.contains("Bebidas").click();
+    cy.contains("Bebidas").should("be.visible").click();
     cy.url().should("include" , "/categoria/bebidas");
     cy.contains("Nescau").should("be.visible");
   });
