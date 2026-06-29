@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint" ,
-    "test:e2e": "cypress run"
+    "lint": "eslint",
+    "test:e2e": "cypress run",
+    "test:e2e:ci": "start-server-and-test start http://localhost:3000 test:e2e"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.11.1",
@@ -21,6 +22,7 @@
     "cypress": "^15.18.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "start-server-and-test": "^3.0.11",
     "tailwindcss": "^4"
   }
 }
