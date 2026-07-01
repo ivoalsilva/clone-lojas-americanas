@@ -1,17 +1,22 @@
+import Link from "next/link"
 import Image from "next/image"
-import {ShoppingCart} from "lucide-react"
+import { ShoppingCart } from "lucide-react"
 
 export default function ProdutoCard({ produto }) {
-    const precoFormatado = produto.preco.toLocaleString("pt-BR" , { style: "currency" , currency:"BRL" })
+    const precoFormatado = produto.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
     return (
         <div className="bg-white rounded-lg p-3 flex flex-col gap-2 shadow-sm">
             <div className="relative">
-                <Image className="w-auto h-40 object-contain mx-auto" width={200} height={200} src={produto.imagem} alt={produto.nome}/>
+                <Link href={`/produto/${produto.id}`}>
+                    <Image className="w-auto h-40 object-contain mx-auto" width={200} height={200} src={produto.imagem} alt={produto.nome} />
+                </Link>
                 <button aria-label="adicionar ao carrinho" className="absolute bottom-0 right-0 bg-red-600 text-white rounded-full p-2 ">
-                    <ShoppingCart size={20}/>
+                    <ShoppingCart size={20} />
                 </button>
             </div>
-            <span className="line-clamp-2">{produto.nome}</span>
+            <Link href={`/produto/${produto.id}`}>
+                <span className="line-clamp-2">{produto.nome}</span>
+            </Link>
             <span className="font-bold text-red-500">{precoFormatado}</span>
             <span className="text-xs text-red-600 bg-red-100 rounded-full px-2 py-1 w-fit">retire em 2h</span>
         </div>
