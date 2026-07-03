@@ -1,7 +1,11 @@
+"use client"
+
+import { useCarrinho } from "@/context/CarrinhoContext";
 import Link from "next/link";
 import { CircleUser, Store, Heart, ShoppingCart, Search, MapPin, Menu, ChevronDown } from "lucide-react"
 
 export default function Header() {
+    const { itens } = useCarrinho()
     return (
         <header>
             <section className="bg-red-600 w-full min-h-24 flex flex-wrap items-center gap-4 md:justify-evenly text-white p-4">
@@ -18,7 +22,12 @@ export default function Header() {
                 <div className="flex gap-5 md:order-3">
                     <Store />
                     <Heart />
-                    <ShoppingCart />
+                    <div className="relative">
+                        <ShoppingCart />
+                        {itens.length > 0 &&
+                            (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold">{itens.length}</span>)
+                        }
+                    </div>
                 </div>
                 <div className="order-last md:order-0 w-full md:w-auto md:flex-1 md:max-w-md lg:max-w-xl bg-white h-9 rounded-lg flex items-center p-2 text-red-600">
                     <input className="w-full outline-none text-black pl-4" placeholder="Busque aqui seu produto" />

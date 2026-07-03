@@ -1,3 +1,4 @@
+import { CarrinhoProvider } from "@/context/CarrinhoContext";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -25,12 +26,13 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header>
+        <CarrinhoProvider>
+          <Header>
 
-        </Header>
-        {children}
-        <Footer/>
-
+          </Header>
+          {children}
+          <Footer />
+        </CarrinhoProvider>
       </body>
     </html>
   );
