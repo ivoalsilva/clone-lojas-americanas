@@ -16,7 +16,7 @@ export default async function ProdutoPage({ params }) {
             <div className="flex flex-col gap-4">
                 <h1 className="text-2xl font-bold">{produto.nome}</h1>
                 <span className="text-3xl font-bold text-red-600">{precoFormatado}</span>
-                <button className="bg-red-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-red-700 transition-colors w-fit">Comprar</button>
+                <button className="bg-red-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-red-700 cursor-pointer transition-colors w-fit">Comprar</button>
             </div>
         </main>
     )

@@ -17,7 +17,7 @@ export default function ProdutoCard({ produto }) {
                 </Link>
                 {/* por que a seta () =>? Se você escrevesse onClick={adicionar(produto)} (sem a seta), ele chamaria adicionar na hora da renderização, não no clique. A seta cria uma função que só roda quando clica. */}
                 <button onClick={() =>
-                    adicionar(produto)} aria-label="adicionar ao carrinho" className="absolute bottom-0 right-0 bg-red-600 text-white rounded-full p-2 ">
+                    adicionar(produto)} aria-label="adicionar ao carrinho" className="absolute bottom-0 right-0 bg-red-600 text-white rounded-full p-2 cursor-pointer">
                     <ShoppingCart size={20} />
                 </button>
             </div>
