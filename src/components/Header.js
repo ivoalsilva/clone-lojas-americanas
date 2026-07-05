@@ -23,9 +23,11 @@ export default function Header() {
                     <Store />
                     <Heart />
                     <div className="relative">
-                        <ShoppingCart />
+                        <Link href={"/carrinho"}>
+                            <ShoppingCart />
+                        </Link>
                         {itens.length > 0 &&
-                            (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold">{itens.length}</span>)
+                            (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{itens.length}</span>)
                         }
                     </div>
                 </div>
