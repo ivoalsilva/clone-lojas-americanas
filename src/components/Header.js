@@ -25,10 +25,10 @@ export default function Header() {
                     <div className="relative">
                         <Link href={"/carrinho"}>
                             <ShoppingCart />
+                            {itens.length > 0 &&
+                                (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{itens.length}</span>)
+                            }
                         </Link>
-                        {itens.length > 0 &&
-                            (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{itens.length}</span>)
-                        }
                     </div>
                 </div>
                 <div className="order-last md:order-0 w-full md:w-auto md:flex-1 md:max-w-md lg:max-w-xl bg-white h-9 rounded-lg flex items-center p-2 text-red-600">
