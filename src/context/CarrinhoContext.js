@@ -18,6 +18,7 @@ export function CarrinhoProvider({ children }) {
         // A lógica: "quando o app abre, olha na gaveta; se tem carrinho salvo, recupera ele."
         const salvo = localStorage.getItem("carrinho")
         if (salvo) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setItens(JSON.parse(salvo))
         }
     }, []);
