@@ -1,11 +1,19 @@
 "use client"
 
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { useCarrinho } from "@/context/CarrinhoContext";
 import Link from "next/link";
 import { CircleUser, Store, Heart, ShoppingCart, Search, MapPin, Menu, ChevronDown } from "lucide-react"
 
 export default function Header() {
-    const { itens } = useCarrinho()
+    const { itens } = useCarrinho();
+    const [termo , setTermo] = useState("");
+    const router = useRouter()
+    function handleSubmit(e) {
+        e.preventDefault()
+        router.push(`/busca?q=${termo}`)
+    }
     return (
         <header>
             <section className="bg-red-600 w-full min-h-24 flex flex-wrap items-center gap-4 md:justify-evenly text-white p-4">
@@ -31,10 +39,10 @@ export default function Header() {
                         </Link>
                     </div>
                 </div>
-                <div className="order-last md:order-0 w-full md:w-auto md:flex-1 md:max-w-md lg:max-w-xl bg-white h-9 rounded-lg flex items-center p-2 text-red-600">
-                    <input className="w-full outline-none text-black pl-4" placeholder="Busque aqui seu produto" />
+                <form onSubmit={handleSubmit} className="order-last md:order-0 w-full md:w-auto md:flex-1 md:max-w-md lg:max-w-xl bg-white h-9 rounded-lg flex items-center p-2 text-red-600">
+                    <input value={termo} onChange={(e) => setTermo(e.target.value)} className="w-full outline-none text-black pl-4" placeholder="Busque aqui seu produto" />
                     <Search />
-                </div>
+                </form>
             </section>
             <section className="flex items-center justify-evenly bg-red-600 h-14 text-white font-bold text-sm">
                 <div>
