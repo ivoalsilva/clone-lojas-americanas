@@ -1,3 +1,4 @@
+import { formatarPreco } from "@/utils/formatarPreco"
 import Image from "next/image"
 import { produtos } from "@/data/produtos"
 import { notFound } from "next/navigation"
@@ -6,7 +7,7 @@ export default async function ProdutoPage({ params }) {
     const { id } = await params
     const produto = produtos.find((p) => p.id === Number(id))
     if (!produto) { notFound() }
-    const precoFormatado = produto.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+    const precoFormatado = formatarPreco(produto)
 
     return (
         <main className="flex flex-col md:flex-row gap-8 p-4">

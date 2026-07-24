@@ -1,5 +1,6 @@
 "use client"
 
+import { formatarPreco } from "@/utils/formatarPreco"
 import { useCarrinho } from "@/context/CarrinhoContext"
 import Link from "next/link"
 import Image from "next/image"
@@ -7,7 +8,7 @@ import { ShoppingCart } from "lucide-react"
 
 export default function ProdutoCard({ produto }) {
     const { adicionar } = useCarrinho()
-    const precoFormatado = produto.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
+    const precoFormatado = formatarPreco(produto)
 
     return (
         <div className="bg-white rounded-lg p-3 flex flex-col gap-2 shadow-sm">
@@ -24,12 +25,8 @@ export default function ProdutoCard({ produto }) {
             <Link href={`/produto/${produto.id}`}>
                 <span className="line-clamp-2">{produto.nome}</span>
             </Link>
-            <span className="font-bold text-red-500">{precoFormatado}</span>
+            <span className="font-bold text-red-500">{precoFormatado.preco}</span>
             <span className="text-xs text-red-600 bg-red-100 rounded-full px-2 py-1 w-fit">retire em 2h</span>
         </div>
     )
 }
-
-
-
-// .toLocaleString("pt-BR", ...) → formata segundo as regras do Brasil (vírgula decimal, ponto de milhar);
