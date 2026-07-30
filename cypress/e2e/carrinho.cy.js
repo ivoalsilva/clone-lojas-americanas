@@ -14,7 +14,7 @@ describe("carrinho", () => {
         cy.visit("/categoria/bebidas");
         cy.get('[aria-label="adicionar ao carrinho"]').first().should("be.visible").click();
         cy.get('a[href="/carrinho"]').click();
-        cy.contains("Remover").click();
+        cy.get('[aria-label="remover item"]').click();
         cy.contains("Nescau").should("not.exist");
         
     })
