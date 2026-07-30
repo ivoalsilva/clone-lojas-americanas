@@ -8,6 +8,7 @@ import { CircleUser, Store, Heart, ShoppingCart, Search, MapPin, Menu, ChevronDo
 
 export default function Header() {
     const { itens } = useCarrinho();
+    const totalItens = itens.reduce((soma , item) => soma + item.quantidade, 0)
     const [termo , setTermo] = useState("");
     const router = useRouter()
     function handleSubmit(e) {
@@ -34,7 +35,7 @@ export default function Header() {
                         <Link href={"/carrinho"}>
                             <ShoppingCart />
                             {itens.length > 0 &&
-                                (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{itens.length}</span>)
+                                (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{totalItens}</span>)
                             }
                         </Link>
                     </div>
