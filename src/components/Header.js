@@ -24,18 +24,18 @@ export default function Header() {
                     </div>
                 </Link>
 
-                <div className="flex items-center gap-4 ml-auto md:ml-0 md:order-2">
+                <div className="flex items-center gap-4 ml-auto md:ml-0 md:order-2 cursor-pointer">
                     <CircleUser size={40} />
                     <p className="hidden md:block font-bold">Olá, faça seu login <br /> ou cadastre-se</p>
                 </div>
                 <div className="flex gap-5 md:order-3">
-                    <Store />
-                    <Heart />
+                    <Store className="cursor-pointer" />
+                    <Heart className="cursor-pointer" />
                     <div className="relative">
                         <Link href={"/carrinho"}>
                             <ShoppingCart />
                             {itens.length > 0 &&
-                                (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold cursor-pointer">{totalItens}</span>)
+                                (<span className="absolute -top-2 -right-2 bg-white text-red-600 p-1 rounded-full text-xs font-bold">{totalItens}</span>)
                             }
                         </Link>
                     </div>
@@ -47,7 +47,7 @@ export default function Header() {
             </section>
             <section className="flex items-center justify-evenly bg-red-600 h-14 text-white font-bold text-sm">
                 <div>
-                    <a className="flex gap-1">
+                    <a className="flex gap-1 cursor-pointer">
                         <MapPin />
                         <span>Informe seu CEP</span>
                     </a>
@@ -70,7 +70,7 @@ export default function Header() {
                 <nav className="text-[#666666] hidden lg:block">
                     <ul className="flex gap-14">
                         <li>
-                            <button className="flex items-center gap-4">
+                            <button className="flex items-center gap-4 cursor-pointer">
                                 <Menu size={14} />
                                 <span>todos os departamentos</span>
                                 <ChevronDown size={14} />
@@ -86,7 +86,7 @@ export default function Header() {
                         <li><a href="#">móveis</a></li>
                     </ul>
                 </nav>
-                <button className="lg:hidden" aria-label="Abrir menu">
+                <button className="lg:hidden cursor-pointer" aria-label="Abrir menu">
                     <Menu size={14} />
                 </button>
             </section>
